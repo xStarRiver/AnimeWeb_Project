@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ICT project</title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+<body>
+		<div class="spinner start">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+              </div>
+			  <div class="start sbg " ></div>
+
+			  <nav class="navbar">
+					<span class="open-slide">
+					  <a href="#" onclick="openSlideMenu()">
+						<svg width="50" height="50">
+							<path d="M0,5 40,5" stroke="#fff" stroke-width="4"/>
+							<path d="M0,14 40,14" stroke="#fff" stroke-width="4"/>
+							<path d="M0,23 40,23" stroke="#fff" stroke-width="4" />
+						</svg>
+					  </a>
+					</span>
+				
+				  </nav>
+				
+				  <div id="side-menu" class="side-nav">
+					<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+					<a href="homepage.html">主頁</a>
+					<a href="">動畫列表</a>
+					<a href="#">2019年秋季新番</a>
+					<a href="index.html">登錄</a>
+				  </div>
+
+	
+      <div class="container" data-spy="scroll" data-target="#Read">
+			<div class="message">
+					<div class="content">
+						<h2>Welcome</h2>
+						<p>想線上看動漫!卻找不到一個合適的網址,這個網頁就是你需要的</p>
+						<a id="Read" href="#Video" class="btn">Read more</a>
+					</div>
+				</div>
+				<div class="message" id="Video">
+						<div class="content">
+							<h1>Top 5 動漫歌曲</h1>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/HVKZO9rQjHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+     	<div class="outer">
+     		<div class="details">
+     		</div>
+            	</div>
+</div>
+  <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+
+</body>
+</html>

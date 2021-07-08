@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+ 
+  </head>
+  <body id="index">
+    <div id="alert-register"></div>
+        <div class="spinner start">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+              </div>
+              <div class="start sbg " ></div>
+      
+
+      <form id="registerform"action="index.html" class="login-form" style="height: 65%;"> 
+        <h1>註冊新帳號</h1>
+
+        <div class="txtb">
+         <i class="fas fa-user" style="font-size:25px; color: #c8d6e5;"></i>
+          <input type="text" required="required">
+          <span data-placeholder="Username"></span>
+        </div>
+
+        <div class="txtb">
+                <i class="fas fa-envelope"style="font-size:25px; color: #c8d6e5;"></i>
+          <input type="email" name="email" required="required">
+          <span data-placeholder="Gmail"></span>
+        </div>
+
+          <div class="txtb">
+                <i class="fas fa-lock" style="font-size:25px; color: #c8d6e5;"></i>  
+            <input type="password" name="password" required="required">
+            <span data-placeholder="Password"></span>
+        </div>
+        <div class="txtb">
+                <i class="fas fa-lock" style="font-size:25px; color: #c8d6e5;"></i>
+            <input type="password" name="password2" required="required">
+            <span data-placeholder="Retype password"></span>
+        </div>
+       
+        <button form="registerform" type="submit" class="sure" onclick="myFunction()"><i class="fas fa-sign-in-alt"style="font-size:20x; color: white;"></i> 註冊</button>
+
+        <div class="bottom-text" style="margin-top: 3%;">
+       已經有帳號? <a href="index.html">登入</a>
+            </div>
+      </form>
+
+      <script type="text/javascript">
+        $(".txtb input").on("focus",function(){
+          $(this).addClass("focus");
+        });
+
+        $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+
+
+  </body>
+</html>

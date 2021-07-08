@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="" href="login.html">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    
+  </head>
+  
+  <body id="index">
+      <div class="spinner start">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+        <div class="start sbg " ></div>
+
+      <form id="loginform" action="homepage.html" class="login-form">
+        <h1>登錄</h1>
+<br />
+        <div class="txtb">
+            <i class="fas fa-user" style="font-size:25px; color: #c8d6e5;"></i>
+          <input type="text" required="required">
+          <span data-placeholder="Username"></span>
+        </div>
+
+        <div class="txtb">
+            <i class="fas fa-lock" style="font-size:25px; color: #c8d6e5;"></i>
+          <input type="password" required="required">
+          <span data-placeholder="Password"></span>
+        </div>
+
+        <button form="loginform" type="submit" class="sure"  ><i class="fas fa-sign-in-alt"style="font-size:20x; color: white;"></i> 確定</button>
+        <br />
+        <div class="forget-reset-text">
+            <a href="forget.html">忘記密碼?</a> <a href="#">重置密碼</a>
+        </div>
+        <div class="bottom-text">
+            還沒有帳號?<a href="register.html">按此註冊</a>
+        </div>
+
+    
+
+      </form>
+
+      <script type="text/javascript">
+        $(".txtb input").on("focus",function(){
+          $(this).addClass("focus");
+        });
+        
+        $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+
+
+  </body>
+</html>
